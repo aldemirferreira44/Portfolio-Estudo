@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img1 {
+    background: url(pexels-alex-blokstra-1327335.jpg) no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img2 {
+    background: url(pexels-nextvoyage-1476880.jpg) no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img3 {
+    background: url(pexels-yogendra-singh-1563033.jpg) no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#faixa1 {
+    background-color: rgba(1, 48, 1, 0.651);
+    width: 100%;
+    height: 250px;
+}
+
+#faixa1:hover {
+    background-color: beige;
+    cursor: pointer
+}
+
+#faixa2 {
+    background-color: rgba(65, 65, 7, 0.829);
+    width: 100%;
+    height: 250px;
+}
+
+#faixa3 {
+    background-color: white;
+    width: 100%;
+    height: 250px;
+}
+
+#p1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+#p2 {
+    text-align: center;
+    justify-content: center;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+#p3 {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}

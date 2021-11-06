@@ -1,0 +1,47 @@
+main {
+    width: 980px;
+    background-color: black;
+    margin: auto;
+    margin-right: 30%;
+    margin-left: 15%;
+    padding: 1%;
+    border-radius: 2%;
+    text-align: center;
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: #F5DEB3;
+    margin-left: 7%;
+}
+
+#paragrafo {
+    font-family: sans-serif;
+    color: #F5DEB3;
+}
+
+fieldset.grupo1 {
+    border: 0;
+    justify-content: center;
+}
+
+.grupo2 {
+    border: 0;
+    justify-content: center;
+}
+
+body {
+    background-color: #1C1C1C;
+    color: #F5DEB3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 10px;
+}
