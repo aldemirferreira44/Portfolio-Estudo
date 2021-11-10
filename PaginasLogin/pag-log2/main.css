@@ -9,11 +9,12 @@
 body {
     background: url(imagens/pexels-alex-blokstra-1327335.jpg);
     background-size: cover;
-    height: 1;
+    background-attachment: fixed;
 }
 
 #container {
     max-width: 600px;
+    min-width: 300px;
     width: 70%;
     padding: 50px 20px;
     position: absolute;
