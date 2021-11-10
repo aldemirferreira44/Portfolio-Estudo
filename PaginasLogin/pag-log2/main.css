@@ -1,0 +1,109 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: url(imagens/pexels-alex-blokstra-1327335.jpg);
+    background-size: cover;
+    height: 1;
+}
+
+#container {
+    max-width: 600px;
+    width: 70%;
+    padding: 50px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 20px 0;
+}
+
+#container h1 {
+    color: rgb(206, 215, 231);
+    text-align: center;
+    margin: 20px;
+}
+
+.input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+    font-size: 22px;
+    color: rgb(206, 215, 231);
+    outline: none;
+    transition: ease-in-out 30ms;
+    border-bottom: 0.5px solid gray;
+}
+
+.input-box {
+    position: relative;
+    padding: 10px;
+}
+
+label {
+    position: absolute;
+    font-size: 20px;
+    color: rgb(206, 215, 231);
+    top: 0;
+    left: 0;
+    transform: translateY(35px);
+    transition: ease-in-out 30ms;
+}
+
+.input:focus {
+    border-bottom: 2px solid rgb(206, 215, 231);
+}
+
+.input:focus+label {
+    transform: translateY(-1px) scale(.7);
+}
+
+.input:not(:placeholder-shown)+label {
+    transform: translateY(-1px) scale(.7);
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+#enviar {
+    text-align: center;
+}
+
+#sub {
+    width: 250px;
+    padding: 20px;
+    background-color: rgba(97, 95, 95, 0.158);
+    color: rgb(206, 215, 231);
+    cursor: pointer;
+    border-radius: 20px;
+    border: gray;
+    margin-top: 20px;
+}
+
+#sub:hover {
+    background-color: rgba(124, 123, 123, 0.377);
+}
+
+#links {
+    display: grid;
+    margin-top: 30px;
+    
+}
+
+#links>a {
+    text-decoration: none;
+    color: rgb(206, 215, 231);
+    margin-bottom: 10px;
+}
+
+#links>a:hover {
+    color: rgba(124, 123, 123, 0.377);
+}
