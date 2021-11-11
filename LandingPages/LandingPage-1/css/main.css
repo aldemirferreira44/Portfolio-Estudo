@@ -147,8 +147,20 @@ main>p {
     position: absolute;
 }
 
-@media (min-widht: 900px) {
-    body {
-        background-color: black;
+@media (max-width: 900px) {
+    #div2 {
+        display: grid;
+        font-size: 25px;
+        text-align: justify;
     }
+    #span1 {
+        border: none;
+        text-align: center;
+    }
+
+    #span2 {
+        border: none;
+    }
+
+    #span3{}
 }
