@@ -8,6 +8,9 @@ LANDING PAGES
 Landing Page - #1:
 https://aldemirferreira44.github.io/Portfolio-Estudo/LandingPages/LandingPage-1/
 
+Landing Page - #2:
+https://aldemirferreira44.github.io/Portfolio-Estudo/LandingPages/LandingPage-2/
+
 ---------------------------------------------------------------------------------------
 LOGIN PAGES
 
