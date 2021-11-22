@@ -70,6 +70,14 @@ header>span>a {
     color: var(--cor2);
 }
 
+#menu {
+    display: none;
+}
+
+#menu:focus+ul {
+    display: inline-block;
+}
+
 body {
     background-color: #D9D7C5;
 }
@@ -111,33 +119,16 @@ main>p {
     cursor: pointer;
 }
 
-#span1 {
-    width: 100px;
-    height: 200px;
-    padding: 20px;
-    border-right: 2px solid var(--cor4);
-    font-size: 1.1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 25px;
-}
-
-#span2 {
-    width: 100px;
-    height: 200px;
-    padding: 20px;
-    border-right: 2px solid var(--cor4);
-    font-size: 1.1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 25px;
+.span {
+    display: inline-block;
+    width: 230px;
+    height: 150px;
+    font-size: 20px;
+    border-right: 2px solid #000;
 }
 
 #span3 {
-    width: 100px;
-    height: 200px;
-    padding: 20px;
-    font-size: 1.1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 25px;
+    border: none;
 }
 
 #div2 {
@@ -148,31 +139,32 @@ main>p {
     padding: 40px;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 920px) and (min-width: 300px) {
+    #imag {
+        display: none;
+    }
+    #cart {
+        transform: translateX(10px);
+    }
+    #lista {
+        display: grid;
+    }
+    #menu {
+        display: inline-flex;
+        transform: scale(0.4) translateX(-100px);
+        cursor: pointer;
+    }
     #div2 {
         display: grid;
         font-size: 25px;
         text-align: center;
-        position: relative;
+        margin: auto;
+        margin-top: 60px;
+        justify-content: center;
     }
-    #span1 {
+    .span {
         border-right: none;
-        border-bottom: 1px solid var(--cor4);
-        text-align: center;
-        font-size: 1em;
-        width: 80%;
-    }
-    #span2 {
-        border-right: none;
-        border-bottom: 1px solid var(--cor4);
-        text-align: center;
-        font-size: 1em;
-        width: 70%;
-    }
-    #span3 {
-        border-right: none;
-        text-align: center;
-        font-size: 1em;
-        width: 70%;
+        border-bottom: 2px solid #000;
+        margin-bottom: 10px;
     }
 }
