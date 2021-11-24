@@ -12,6 +12,12 @@ html, body {
     height: 100%;
 }
 
+#all {
+    height: 100%;
+    width: 100%;
+}
+
+
 #content, #banner {
     display: inline-block;
 }
@@ -62,7 +68,7 @@ html, body {
     font-weight: bold;
     font-size: 3.5pc;
     text-align: left;
-    transform: translate(90px,40px);
+    transform: translate(90px, 40px);
 }
 
 .button {
@@ -73,7 +79,7 @@ html, body {
     margin-top: 40px;
     font-size: 18px;
     font-weight: bold;
-    transform: translate(-150px,50px);
+    transform: translate(-150px, 50px);
     text-align: left;
 }
 
@@ -91,4 +97,71 @@ html, body {
     width: 20%;
     height: 30%;
     transform: translate(235px, 60px);
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 1300px) {
+    #content {
+        width: 100%;
+    }
+
+    #content>header {
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .button {
+        position: relative;
+        left: 140px;
+    }
+
+    #content>main>h1 {
+        font-size: 2pc;
+    }
+
+
+    #banner {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) and (min-width: 401px) {
+    #content>main {
+        text-align: center;
+    }
+
+    #content>main>h1 {
+        display: block;
+        margin-left: 80px;
+        margin-top: 20px;
+        transform: translate(0, 0);
+        text-align: left;
+    }
+
+    .button {
+        margin-top: 30px;
+
+    }
+
+    #content>main>img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #content>header>img {
+        transform: scale(-30px);
+    }
+
+    #content>header>a {
+        margin-left: 0;
+    }
+
+    #content>main>h1 {
+        margin-left: 0;
+        transform: translateX(17px);
+    }
 }
