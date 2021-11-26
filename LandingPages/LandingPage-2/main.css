@@ -52,7 +52,6 @@ html, body {
     color: black;
     font-size: 18px;
     font-weight: bold;
-
 }
 
 #content>header>a:hover {
@@ -120,11 +119,9 @@ html, body {
         font-size: 2pc;
     }
 
-
     #banner {
         display: none;
     }
-
 
 }
 
@@ -143,7 +140,6 @@ html, body {
 
     .button {
         margin-top: 30px;
-
     }
 
     #content>main>img {
@@ -152,8 +148,13 @@ html, body {
 }
 
 @media screen and (max-width: 400px) {
-    #content>header>img {
-        transform: scale(-30px);
+    #content {
+        overflow: hidden;
+    }
+
+    #content>header {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     #content>header>a {
@@ -163,5 +164,9 @@ html, body {
     #content>main>h1 {
         margin-left: 0;
         transform: translateX(17px);
+    }
+
+    #content>main>img {
+        display: none;
     }
 }
