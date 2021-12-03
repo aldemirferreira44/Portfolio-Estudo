@@ -5,12 +5,15 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/* Reset */
 
 body {
     background: url(imagens/pexels-snapwire-670061.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
+/* Background */
+
 
 #container {
     max-width: 600px;
@@ -31,6 +34,8 @@ body {
     font-size: 2em;
     font-weight: bold;
 }
+/* Container */
+
 
 .input {
     width: 100%;
@@ -69,6 +74,8 @@ label {
 .input:not(:placeholder-shown)+label {
     transform: translateY(-0.1px) scale(.8);
 }
+/* Caixas de Texto */
+
 
 #enviar {
     text-align: center;
@@ -87,6 +94,8 @@ label {
 #btn:hover {
     background-color: rgba(0, 0, 0, 0.247);
 }
+/* Button */
+
 
 #div-link {
     text-align: center;
@@ -105,3 +114,4 @@ label {
 #cadastro:hover {
     color: rgb(0, 0, 0);
 }
+/* Links Alternativos */

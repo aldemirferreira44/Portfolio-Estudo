@@ -5,12 +5,16 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/* Reset */
+
 
 body {
     background: url(imagens/pexels-alex-blokstra-1327335.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
+/* Background */
+
 
 #container {
     max-width: 600px;
@@ -30,6 +34,8 @@ body {
     text-align: center;
     margin: 20px;
 }
+/* Container */
+
 
 .input {
     width: 100%;
@@ -73,6 +79,8 @@ label {
 input::placeholder {
     color: transparent;
 }
+/* Text Boxes */
+
 
 #enviar {
     text-align: center;
@@ -92,11 +100,12 @@ input::placeholder {
 #sub:hover {
     background-color: rgba(124, 123, 123, 0.377);
 }
+/* Button */
+
 
 #links {
     display: grid;
-    margin-top: 30px;
-    
+    margin-top: 30px;    
 }
 
 #links>a {
@@ -108,3 +117,4 @@ input::placeholder {
 #links>a:hover {
     color: rgba(124, 123, 123, 0.377);
 }
+/* Alternative Links */
