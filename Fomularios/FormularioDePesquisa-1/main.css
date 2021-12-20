@@ -1,47 +1,99 @@
-main {
-    width: 980px;
-    background-color: black;
-    margin: auto;
-    margin-right: 30%;
-    margin-left: 15%;
-    padding: 1%;
-    border-radius: 2%;
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Reset*/
+
+body {
+    background-color: rgb(186, 170, 216);
+}
+
+form {
+    background-color: rgb(231, 228, 222);
+    width: 600px;
+    height: 85%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.grupo0 {
     text-align: center;
+    padding: 5px;
+    margin: 5px;
 }
 
-#titulo {
-    font-family: sans-serif;
-    color: #F5DEB3;
-    margin-left: 7%;
+.grupo1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px;
 }
 
-#paragrafo {
-    font-family: sans-serif;
-    color: #F5DEB3;
-}
-
-fieldset.grupo1 {
-    border: 0;
-    justify-content: center;
+.input {
+    margin-right: 30px;
+    margin-bottom: 5px;
 }
 
 .grupo2 {
-    border: 0;
-    justify-content: center;
+    margin: 5px;
+    padding-bottom: 5px;
 }
 
-body {
-    background-color: #1C1C1C;
-    color: #F5DEB3;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    margin: auto;
-    justify-content: center;
+.grupo3 {
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+.grupo4 {
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+.grupo5 {
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+.grupo6 {
+    margin: 5px;
+    padding-bottom: 5px;
     text-align: center;
 }
 
-input, select, textarea, button {
-    border-radius: 5px;
-    background-color: white;
-    margin-bottom: 10px;
+.enviar {
+    padding: 5px;
+    width: 100px;
+    text-decoration: none;
+    background-color: darkslateblue;
+    color: wheat;
+    transition: 0, 5ms ease-in-out;
+}
+
+.enviar:hover {
+    cursor: pointer;
+    background-color: rgb(46, 39, 90);
+}
+
+/* Responsividade */
+@media screen and (max-width:615px) {
+    form {
+        width: 100%;
+        height: 100%;
+    }
+
+    .grupo1 {
+        flex-direction: column;
+    }
+
+    .input {
+        margin: 0;
+    }
 }

@@ -200,7 +200,7 @@ main>p {
     #lista2 {
         display: flex;
         flex-direction: row;
-        padding: 20px;
+        padding: 0;
         height: 0;
         background-color: #0D0D0D;
         color: #D9D7C5;
@@ -224,8 +224,9 @@ main>p {
 
     }
 
-    .menu-mobile:focus+#lista2 {
-        height: 38vh
+    .menu-mobile:focus + #lista2 {
+        padding: 20px;
+        height: 38vh;
     }
 
     .item2 {
@@ -256,4 +257,3 @@ main>p {
     }
 }
 
-@media screen and (max-width: 400px) {}
