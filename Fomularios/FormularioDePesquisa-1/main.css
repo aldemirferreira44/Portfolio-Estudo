@@ -23,14 +23,13 @@ form {
     transform: translate(-50%, -50%);
 }
 
-
-.grupo0 {
+#grupo0 {
     text-align: center;
     padding: 5px;
     margin: 5px;
 }
 
-.grupo1 {
+#grupo1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -42,27 +41,27 @@ form {
     margin-bottom: 5px;
 }
 
-.grupo2 {
+#grupo2 {
     margin: 5px;
     padding-bottom: 5px;
 }
 
-.grupo3 {
+#grupo3 {
     margin: 5px;
     padding-bottom: 5px;
 }
 
-.grupo4 {
+#grupo4 {
     margin: 5px;
     padding-bottom: 5px;
 }
 
-.grupo5 {
+#grupo5 {
     margin: 5px;
     padding-bottom: 5px;
 }
 
-.grupo6 {
+#grupo6 {
     margin: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -83,17 +82,14 @@ form {
 }
 
 /* Responsividade */
-@media screen and (max-width:615px) {
+@media screen and (max-width:600px) {
     form {
+        width: 300px;
+        height: 95%;
+        overflow: auto;
+    }
+
+    .textarea {
         width: 100%;
-        height: 100%;
-    }
-
-    .grupo1 {
-        flex-direction: column;
-    }
-
-    .input {
-        margin: 0;
     }
 }
