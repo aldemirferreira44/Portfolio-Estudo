@@ -6,19 +6,20 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 /*Reset*/
+
 
 :root {
     --corbackground: #101C26;
     --cordestaque: #F22987;
     --corbutton: #D93D66;
 }
-
 /*Cores*/
+
 
 body {
     background-color: var(--corbackground);
+    overflow: hidden;
 }
 
 header {
@@ -28,7 +29,10 @@ header {
 
 header>h1 {
     color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/*Header*/
+
 
 main {
     display: flex;
@@ -38,6 +42,7 @@ main {
     color: whitesmoke;
     padding: 50px;
     margin: 50px;
+    transform: translateY(10%);
 }
 
 .texto>h1 {
@@ -57,32 +62,41 @@ main {
     margin: 10px;
 }
 
-
 .formulario {
     color: whitesmoke;
     display: flex;
     flex-direction: column;
     padding: 50px;
     margin: 50px;
+    transform: translateY(-5%);
+}
+
+.formulario>h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .formulario>input {
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 1px;
+    font-size: 20px;
 }
 
 .formulario>button {
     background-color: var(--corbutton);
-    color: var(--corbackground);
+    color: whitesmoke;
     padding: 5px;
     font-size: 18px;
     font-weight: bold;
     border-radius: 20px;
-    transition: ease-in-out 0,8ms;
+    margin-top: 20px;
+    transition: ease-in-out 0, 8ms;
 }
 
 .formulario>button:hover {
     cursor: pointer;
     background-color: var(--cordestaque);
-    color: whitesmoke;
+    color: white;
 }
+/*Main*/
